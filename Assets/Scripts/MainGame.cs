@@ -24,11 +24,11 @@ public class MainGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float MouseX = Input.GetAxis("Mouse X") * 1.0f;
-        float MouseY = Input.GetAxis("Mouse Y") * 1.0f;
+        float MouseX = Input.GetAxis("Mouse X") * 0.05f;
+        float MouseY = Input.GetAxis("Mouse Y") * 0.05f;
 
-        Debug.Log(MouseX);
-        Debug.Log(MouseY);
+       // Debug.Log(MouseX);
+       // Debug.Log(MouseY);
         RotationCurrentX += MouseX;
         RotationCurrentY += MouseY;
         RotationCurrentX = Mathf.Clamp(RotationCurrentX, -5.5f, -4.7f);
